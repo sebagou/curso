@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#d7374f</color>
+    <color name="linha_par">#c2c8fc</color>
+    <color name="linha_impar">#9eaefd</color>
+</resources>
