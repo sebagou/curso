@@ -180,9 +180,12 @@ public class ListaAlunosActivity extends AppCompatActivity {
 
             case R.id.menu_enviar_notas:
                 new EnviaAlunosTask(this).execute();
-
                 return true;
 
+            case R.id.menu_receber_provas:
+                Intent provas = new Intent(this, ProvasActivity.class);
+                startActivity(provas);
+                return true;
 
         }
         return super.onOptionsItemSelected(item);
