@@ -12,6 +12,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.android7164.listaalunos2.R;
+import com.example.android7164.listaalunos2.activity.ProvasActivity;
 import com.example.android7164.listaalunos2.model.Prova;
 
 import java.util.Arrays;
@@ -48,8 +49,10 @@ public class ListaProvasFragment extends Fragment {
             public void onItemClick(AdapterView<?> adapter, View view, int posicao, long id) {
 
                 Prova selecionada = (Prova) adapter.getItemAtPosition(posicao);
-
                 Toast.makeText(getActivity(),"Prova: "+ selecionada, Toast.LENGTH_SHORT).show();
+
+                ProvasActivity calendarioProvas = (ProvasActivity) getActivity();
+                calendarioProvas.selecionaProva(selecionada);
 
             }
         });
